@@ -1,0 +1,28 @@
+name: Validate source
+on: [push, pull_request]
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: source
+      - uses: actions/checkout@v4
+        with:
+          repository: source-guided/project-builder
+          path: client
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 client/scripts/validate_source.py --source source
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: source/package-lock.json
+      - run: npm ci
+        working-directory: source
+      - run: npx playwright install --with-deps chromium
+        working-directory: source
+      - run: npm run test:ui
+        working-directory: source

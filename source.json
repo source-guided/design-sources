@@ -1,0 +1,12 @@
+{
+  "format": 1,
+  "id": "design",
+  "version": "1.0.0",
+  "role": "UX·UI·접근성",
+  "exposure": "source-only",
+  "contract": "project-builder.source/v1",
+  "entry": "references/index.json",
+  "capabilities": [
+    "capabilities/ux/SKILL.md"
+  ]
+}
