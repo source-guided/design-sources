@@ -15,6 +15,10 @@ jobs:
         with:
           python-version: '3.12'
       - run: python3 client/scripts/validate_source.py --source source
+      - name: Check source discovery
+        run: python3 -m unittest discover -s source/tests -p "test_*.py" -v
+        env:
+          PYTHONPATH: ${{ github.workspace }}/client/plugins/project-builder/scripts
       - uses: actions/setup-node@v4
         with:
           node-version: '22'

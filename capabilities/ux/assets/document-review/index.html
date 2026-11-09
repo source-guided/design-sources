@@ -191,7 +191,7 @@
       render();
       elements['content-error'].hidden = true;
       elements.content.removeAttribute('aria-invalid');
-      elements['revision-heading'].focus({ preventScroll: true });
+      elements['revision-heading'].focus();
     });
 
     elements.cancel.addEventListener('click', () => {

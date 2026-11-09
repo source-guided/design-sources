@@ -25,137 +25,181 @@
     },
     {
       "id": "ux",
-      "label": "ux 내부 스킬",
-      "description": "ux 내부 스킬",
+      "label": "사용자 화면 설계·검토 스킬",
+      "description": "화면 설계와 사용자 흐름 검토의 진입 안내",
       "kind": "source",
       "access": "relative",
       "locator": "../capabilities/ux/SKILL.md",
       "topics": [
-        "ux"
+        "ux",
+        "화면 설계",
+        "사용자 흐름",
+        "design"
       ]
     },
     {
       "id": "feedback-actions",
-      "label": "ux-feedback-and-actions",
-      "description": "ux-feedback-and-actions",
+      "label": "피드백과 편집 행동의 연속성",
+      "description": "오류 복구·완료 알림·저장과 취소 영역을 선택하고 확인하는 안내",
       "kind": "source",
       "access": "relative",
       "locator": "../capabilities/ux/sources/feedback-and-actions.md",
       "topics": [
         "design",
         "ux",
-        "feedback-and-actions"
+        "feedback-and-actions",
+        "오류 복구",
+        "알림",
+        "저장",
+        "취소",
+        "feedback",
+        "recovery"
       ]
     },
     {
       "id": "interactions",
-      "label": "ux-interaction-patterns",
-      "description": "ux-interaction-patterns",
+      "label": "편집 화면과 상호작용 방식 선택",
+      "description": "인라인·대화상자·별도 페이지와 포커스·스크롤 전환을 비교하는 안내",
       "kind": "source",
       "access": "relative",
       "locator": "../capabilities/ux/sources/interaction-patterns.md",
       "topics": [
         "design",
         "ux",
-        "interaction-patterns"
+        "interaction-patterns",
+        "편집",
+        "대화상자",
+        "스크롤",
+        "focus",
+        "editing"
       ]
     },
     {
       "id": "patterns",
-      "label": "ux-patterns",
-      "description": "ux-patterns",
+      "label": "사용자 과업별 화면 예제",
+      "description": "찾기·미리보기·문서 검토·오류 복구의 적용 조건과 반례",
       "kind": "source",
       "access": "relative",
       "locator": "../capabilities/ux/sources/patterns.md",
       "topics": [
         "design",
         "ux",
-        "patterns"
+        "patterns",
+        "예제",
+        "사용자 과업"
       ]
     },
     {
       "id": "selection",
-      "label": "ux-reference-selection",
-      "description": "ux-reference-selection",
+      "label": "디자인 참고 자료와 방향 선택",
+      "description": "사용자 선호와 기존 디자인에 맞는 참고 자료를 선택하는 안내",
       "kind": "source",
       "access": "relative",
       "locator": "../capabilities/ux/sources/reference-selection.md",
       "topics": [
         "design",
         "ux",
-        "reference-selection"
+        "reference-selection",
+        "참고 자료",
+        "디자인 방향",
+        "선호",
+        "reference selection"
       ]
     },
     {
       "id": "task-navigation",
-      "label": "ux-task-navigation",
-      "description": "ux-task-navigation",
+      "label": "과업 탐색과 선택 상태",
+      "description": "현재 맥락·선택 항목·키보드 컨트롤·보조 화면을 검토하는 안내",
       "kind": "source",
       "access": "relative",
       "locator": "../capabilities/ux/sources/task-navigation.md",
       "topics": [
         "design",
         "ux",
-        "task-navigation"
+        "task-navigation",
+        "키보드",
+        "keyboard",
+        "탐색",
+        "선택",
+        "navigation"
       ]
     },
     {
       "id": "verification",
-      "label": "ux-verification",
-      "description": "ux-verification",
+      "label": "화면 동작과 접근성 검증",
+      "description": "사용자 흐름·포커스·접근성·반응형 상태를 실제 화면에서 확인하는 안내",
       "kind": "source",
       "access": "relative",
       "locator": "../capabilities/ux/sources/verification.md",
       "topics": [
         "design",
         "ux",
-        "verification"
+        "verification",
+        "접근성",
+        "accessibility",
+        "반응형",
+        "검증",
+        "responsive"
       ]
     },
     {
       "id": "workflow",
-      "label": "ux-workflow",
-      "description": "ux-workflow",
+      "label": "사용자 과업 중심 화면 설계",
+      "description": "역할·사용자 흐름·상태 전환을 기준으로 화면을 구성하고 검토하는 안내",
       "kind": "source",
       "access": "relative",
       "locator": "../capabilities/ux/sources/workflow.md",
       "topics": [
         "design",
         "ux",
-        "workflow"
+        "workflow",
+        "화면 설계",
+        "사용자 흐름",
+        "user journey",
+        "screen"
       ]
     },
     {
       "id": "ux-desktop",
-      "label": "desktop.png",
-      "description": "desktop.png",
+      "label": "문서 검토 예제 데스크톱 화면",
+      "description": "합성 문서 검토 예제의 넓은 화면 이미지",
       "kind": "source",
       "access": "relative",
       "locator": "../capabilities/ux/assets/document-review/desktop.png",
       "topics": [
-        "ux-desktop"
+        "ux-desktop",
+        "문서 검토",
+        "데스크톱",
+        "example"
       ]
     },
     {
       "id": "ux-index",
-      "label": "index.html",
-      "description": "index.html",
+      "label": "문서 검토 실행 예제",
+      "description": "버전별 승인과 편집 흐름을 확인하는 페이지 내부 상태 예제",
       "kind": "source",
       "access": "relative",
       "locator": "../capabilities/ux/assets/document-review/index.html",
       "topics": [
-        "ux-index"
+        "ux-index",
+        "문서 검토",
+        "승인",
+        "편집",
+        "example"
       ]
     },
     {
       "id": "ux-narrow",
-      "label": "narrow.png",
-      "description": "narrow.png",
+      "label": "문서 검토 예제 좁은 화면",
+      "description": "합성 문서 검토 예제의 좁은 화면 이미지",
       "kind": "source",
       "access": "relative",
       "locator": "../capabilities/ux/assets/document-review/narrow.png",
       "topics": [
-        "ux-narrow"
+        "ux-narrow",
+        "문서 검토",
+        "반응형",
+        "example"
       ]
     },
     {

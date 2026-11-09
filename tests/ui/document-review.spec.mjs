@@ -50,6 +50,24 @@ test('a changed save creates an unapproved revision and keeps the old decision s
   await expect(page.locator('#status')).toHaveText('수정 요청됨 · 버전 2');
 });
 
+test('saving a long document returns keyboard focus to a visible revision heading', async ({ page }, testInfo) => {
+  await page.locator('#edit').click();
+  await page.locator('#content').fill('긴 문서의 내용을 검토하고 수정하는 흐름입니다.\n'.repeat(100));
+  await page.locator('#save').click();
+  await expect(page.locator('#revision')).toHaveText('2');
+  // 하단 편집 버튼에서 다시 진입해 저장해도 포커스 대상이 화면 안에 있어야 한다.
+  await page.locator('#edit').click();
+  await page.locator('#save').click();
+  const heading = page.locator('#revision-heading');
+  await expect(heading).toBeFocused();
+  await expect(heading).toBeInViewport({ ratio: 1 });
+  await expect(page.locator('#revision')).toHaveText('2');
+  await page.keyboard.press('Tab');
+  await expect(page.locator('#edit')).toBeFocused();
+  await expect(page.locator('#edit')).toBeInViewport({ ratio: 1 });
+  await page.screenshot({ path: testInfo.outputPath('long-document-focus.png'), fullPage: false });
+});
+
 test('error descriptions are exposed only while the field is invalid', async ({ page }) => {
   await page.locator('#edit').click();
   const field = page.locator('#content');
