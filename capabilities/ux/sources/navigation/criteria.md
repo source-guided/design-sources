@@ -10,6 +10,12 @@ Organize information and routes around the purposes and evidence identified thro
 - Can someone seeking an overview finish without entering a management flow, and can someone needing detail or an action find the appropriate route without inspecting unrelated information? Choose distinctions from actual user intent and permissions rather than inventing a page for every role.
 - Are optional details clearly named and discoverable, with enough summary to decide whether to open them? A smaller initial view is useful only when it preserves understanding and access.
 
+## Roles within the composition
+
+- What user purpose does each information or action region serve, what scope does it act on, and what understanding or result does it provide? Explain the contribution in task terms; a component name, familiar layout or different label does not establish a role.
+- When regions offer related information or choices, do their scopes, destinations or effects differ meaningfully to the user? Judge them together in the states where they coexist. Can users understand the relationship without testing each control or guessing whether they are alternatives, levels or repeated access to the same thing?
+- If their roles overlap, what user benefit requires both placements in that context, and does it outweigh the extra scanning, choice or apparent hierarchy? Repeated access can be useful; repetition alone is not a defect. Compare keeping, combining or removing a region by what task capability or access would be lost and what burden would be removed. Keep the chosen rationale with the product's decisions rather than relying on an assumed convention.
+
 ## Continuation across views and actions
 
 - When moving to another view, does the destination continue the user's purpose with the relevant object, scope and prior choices, or merely present another page? Can the user recognize whether the task is complete, what remains and which next action is useful?

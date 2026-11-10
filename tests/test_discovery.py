@@ -26,6 +26,9 @@ CASES = [
     ('IA 정보 구조', 'navigation-criteria'),
     ('다음 행동', 'navigation-criteria'),
     ('판단 지원', 'navigation-criteria'),
+    ('영역 역할', 'navigation-criteria'),
+    ('역할 중복', 'navigation-criteria'),
+    ('region roles', 'navigation-criteria'),
 ]
 
 

@@ -1,7 +1,7 @@
 {
   "format": 1,
   "id": "design",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "role": "UX·UI·접근성",
   "exposure": "source-only",
   "contract": "project-builder.source/v1",

@@ -2,7 +2,7 @@
 
 - Does the hierarchy make the important content and actions apparent?
 - Do typography, scale and proportion fit the content and its role?
-- Do alignment, grouping and spacing communicate relationships clearly?
+- Do alignment, grouping and spacing communicate relationships clearly? Do visible boundaries and emphasis reflect the regions' actual scope and roles, without implying distinctions the behavior does not support? Use the [information architecture area](../../../../references/navigation/index.json) to judge those roles and any overlap.
 - Are contrast and emphasis sufficient and proportionate?
 - Is the composition coherent across its relevant states and surroundings?
 
