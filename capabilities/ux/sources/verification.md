@@ -1,13 +1,17 @@
-# Verify product interaction flows
+# Observe interaction outcomes
 
-Apply only the checks relevant to the actual task and adopted design.
+Use the actual task, adopted design and explicit constraints as the expected outcome. Follow the verification method selected through the consuming project's connections for claim/evidence sufficiency and for distinguishing requirements from discretionary choices. This document routes UX observations to their owners; it does not duplicate that method.
 
-- Role/permission behavior and rendered UX for affected paths.
-- Each primary role's entry-to-outcome path and a concrete find-and-act task from visible UI. Check current scope, selected item, and detail/action identity after filtering; do not substitute the administrator view for other roles. Use UX reference `task-navigation` where relevant.
-- First use without prepared successful state, repeat use, and a required outcome outside the default scope where relevant. For an input journey, check preparation, start, recovery/backtracking, and the final commit boundary from visible UI, not just whether the submitted payload is valid.
-- Open controls and secondary surfaces: selection/commit/cancel keyboard paths, viewport-edge clipping, close/reopen draft preservation, main-page anchors, scrollbar width, and return focus.
-- Interaction transitions: expected stable controls, scroll, and focus across editing, cancellation, errors, and loading. Distinguish intended expansion from incidental layout jumps; load-only metrics are insufficient.
-- Data-dependent transitions with and without conditional context, including appearance and disappearance. Select contrasting inputs while holding the task constant; inspect the changing region and meaningful downstream anchors. A static screenshot or no horizontal overflow does not cover this behavior.
-- Feedback lifecycle and scope: completion/cancel events do not remain as unrelated page state; contextual messages belong to the current item; temporary messages clear as designed while actionable errors remain recoverable. Check actual action-region correspondence, not only stable siblings. Use UX reference `feedback-actions` for the decision method.
+Choose the relevant owner through the [UX reference index](../../../references/index.json):
 
-Keep evidence tied to the observed revision; do not claim user acceptance or unobserved behavior.
+- `task-navigation` for finding the intended item, scope and selection, control behavior and completing the action.
+- `interactions` for editing surfaces, spatial continuity, reading position and reachability across transitions.
+- `feedback-actions` for recognizing action results, their scope and lifetime, and returning to recovery information.
+- `selection` for the adopted visual direction and component context.
+- `visual-expression` for hierarchy, proportion, coherence and the apparent identity of content across states.
+
+Use the owners that correspond to material decisions in this task. Apply their observations to the rendered experience as well as data and accessible semantics. No standard matrix fits every screen. If a relevant source or observation is unavailable, preserve the affected question instead of inferring that another passed check covers it.
+
+For each material design question, distinguish the criterion, the actual observation and the resulting decision. Ask whether the available observation addresses that question or only an easier proxy. Apply the selected verification workflow's disposition of contrary observations to anything the walkthrough exposes. Keep its general completion rules in that owner rather than repeating them here.
+
+Report code correctness, the interaction quality actually observed and user acceptance separately. Keep evidence and limitations in the project's existing owner records.

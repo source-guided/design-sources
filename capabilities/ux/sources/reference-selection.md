@@ -15,6 +15,6 @@ If multiple directions materially affect the result and the user's preference is
 
 Record chosen reference IDs, what was adopted, what was intentionally not adopted, and the user's preference. Do not turn one product's numerical limits, brand style, or component-count recommendations into global rules. A dense expert tool, a first-time service form, and an image-led catalogue can legitimately need different layouts.
 
-Once a direction is selected, verify basic outcomes: correct state/data, recoverable errors, meaningful controls, visible keyboard focus, and intentional spatial changes. Preference guides the design choice; passing a generic style checklist does not prove that the user likes the result.
+Once a direction is selected, use `visual-expression` through the UX reference index to judge its expression in the actual composition, and `workflow` for the shared decision process. Use `verification` for the relevant observations. Preference guides the choice; a generic style checklist does not establish user acceptance.
 
 Next references: use the package design reference index, then the relevant UI or UX index. When a source suggests another source, return to the appropriate reference before reading it.

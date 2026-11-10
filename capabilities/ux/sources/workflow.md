@@ -1,46 +1,25 @@
-# Task-focused product UX
+# Judge the screen from the user's task
 
-Start with the user's situation and intended outcome. Existing design systems, research, and supplied designs are evidence; do not replace them with a generic dashboard. Read [patterns and counterexamples — reference](../../../references/index.json) for the relevant type of task, not every pattern.
+This workflow owns the shared design decision process. It applies to visual expression as well as interaction behavior. The result is a reasoned choice for the user's task, not a component recipe or a checklist score. Follow the connected reference client's entry procedure for source reading and coverage.
 
-For a new UI direction or a request for broader references, follow the design/UI reference `selection`, then choose relevant sources from the UI, UX, and project-local reference branches. Existing user preferences take priority over a generic style. Compare viable alternatives when a material preference is unknown; do not make a new approval gate or ask again after a direction was chosen.
+## Find the relevant owners
 
-## Before building a screen
+Through the [UX reference index](../../../references/index.json), use `selection` for user direction and relevant references, `visual-expression` for visual hierarchy, proportion and coherence, `task-navigation` for finding and acting, `interactions` for surfaces and state transitions, `feedback-actions` for action results and recovery, and `verification` for bringing the applicable observations together. Identify the material questions this change introduces; do not read every branch mechanically. A visible screen or state change has a visual design question even when its behavior uses a familiar component.
 
-For each primary role/task, identify the trigger, information already known, decisions to make, completion outcome, and recovery path. Separate role-specific workflows when their decisions differ; share screens when the task and context genuinely match.
+## Make and revisit the design choice
 
-For screens with multiple roles, filters, selected details, or expandable tools, resolve `task-navigation` in the [UX reference index](../../../references/index.json). Establish the role's real entry path and a clear current selection before polishing controls. Review a concrete find-and-act task from visible UI rather than proving only that the components exist.
+1. **Establish the intended experience.** Identify the user's purpose, current context and next meaningful action. Include what they should notice first, what remains supporting information, and the adopted visual direction. Supplied designs, accepted preferences and existing components are inputs. Distinguish a required user outcome from a mandated mechanism: identify the adopted contract before treating one particular visual or interaction treatment as compulsory. Preserve the required outcome while keeping unspecified implementation choices open.
 
-Produce a compact flow and low-fidelity layout proportional to the change. For each visible region state:
-- Which user decision or action needs it now?
-- Is it primary, contextual detail, or unnecessary in this view?
-- Which requirement, source, or explicit design decision justifies it?
+2. **Establish the need for a change.** Start with what the existing experience already lets the user understand and do. Identify the remaining uncertainty or task obstacle. Compare the proposal with leaving that experience alone: what would the person lose without the addition or transformation? An implementation event is not itself a user need. Decide whether any additional treatment is warranted before choosing its form. Deliberately retaining the existing presentation or omitting an additional signal can be a complete design decision.
 
-For a substantial flow, connect the task model to one or more material decisions in the existing work record: task condition → applicable source and its limits → plausible alternatives → chosen tradeoff → observable check. This is a short reasoning record, not a required design document or approval gate. A source-read receipt is not evidence that its guidance was applied. Before implementation, try to disprove the chosen flow with a realistic competing task or state. Reconsider it when the user cannot reach a required outcome; do not patch the explanation around an unsuitable structure.
+3. **Separate continuity from change.** Identify what actually changes in the user's task or understanding and what should still be recognized as the same content, action or context. Use that distinction to choose what to preserve and what to make visibly different. Follow the relevant owner sources for both the information being conveyed and its rendered expression; do not infer continuity merely because the outer component remains in place.
 
-Distinguish first use, repeated use, and a change of context when they affect the task. For unfamiliar input or dependent decisions, resolve UX reference `interactions` and its journey guidance before laying out fields. Neither the API schema nor the presence of a demo dataset defines the user's workflow. Keep the user's task vocabulary and the state that makes the next action meaningful.
+4. **Compare the effects and tradeoffs.** Consider the smallest sufficient treatment and plausible alternatives under the same constraints. Judge what each helps the person understand or do, what it duplicates, and what attention, reorientation or loss of coherence it costs. This may be a brief comparison rather than multiple mockups. Assess the combined treatment and its effects on the surrounding task, not just each element in isolation. Individually defensible additions can together become redundant or disruptive. Functional success, geometric stability and familiar component defaults do not settle the choice. Challenge the proposal against the unchanged experience before rationalizing an implementation that already exists.
 
-Use this to select information, not to generate more product copy. Do not automatically add overview cards, charts, banners, filters, navigation, AI explanations, or “coming soon” panels. A metric belongs when someone makes a relevant decision with it. Technical provenance can belong when needed to judge freshness or validity; debug logs and implementation status usually belong in development records.
+5. **Challenge the rendered result, then conclude.** First observe what the user actually encounters in the relevant states, including effects not named in the original design rationale. Use the owning sources to judge those observations against the intended experience. Then decide whether the choice should be retained or revised. Keep the observation distinct from an explanation of why the implementation was chosen; a plausible rationale must not conceal a conflicting result. Follow `verification` for handling contrary observations before making a completion claim. Opening an image, retaining a layout coordinate or passing a functional check does not itself close a design question.
 
-Do not minimize blindly. Keep accessibility instructions, meaningful errors, essential context, required disclosures, and decision consequences. A primary action is a useful default, not an arbitrary one-button limit. Avoid hiding important actions behind generic menus solely to reduce visible controls.
+Scale the reasoning to the decision. A short explanation in the existing owner record can be enough. No separate document, universal state matrix, fixed number of alternatives or approval gate is required. Observation and measurement serve unresolved design questions; they are not the purpose of this process.
 
-## State and interaction
+## Follow through
 
-Model relevant states: initial, loading, empty, failure, success, editing/unsaved, stale result, and permission constraints. Use only states the product needs. Make selected inputs and displayed results refer to the same context. Preserve the user's work on recoverable errors. Choose explicit actions where silent changes would surprise the user.
-
-For feedback and edit actions, resolve `feedback-actions` in the [UX reference index](../../../references/index.json). Choose message scope and lifetime together, map the action region through the full transition, and test removal as well as appearance. A page-top persistent sentence is not the default for a completed local action; neither is a toast mandatory.
-
-When selecting an editing surface or changing stateful layouts, read [interaction pattern selection — reference](../../../references/index.json). Choose inline editing, a dialog, or a dedicated page from task complexity, frequency, context needs, and available space; do not use a modal simply to hide a layout bug. Check before/after position, scroll, and focus of meaningful controls. Intentional disclosure may move content; incidental jumps or disappearing targets need correction.
-
-Use the project's tokens, components, language, and accessibility conventions. Inspect a supplied reference through an available supported tool; missing Figma MCP is not by itself a reason to stop. Never label an uninspected design as matched. Do not introduce a new component library merely for a small change.
-
-Check accessible names and descriptions across valid/error/recovered states, not only visual visibility and focus. A hidden message can still be exposed when referenced by an accessible description; connect error text only when the error applies.
-
-## Review the rendered flow
-
-Use an available browser or application tool to perform the task from its actual entry point. Inspect structure for labels and controls, and rendered screenshots for hierarchy, clipping, spacing, and visual states. Automated accessibility or DOM checks alone do not prove visual or usability quality.
-
-For responsive checks, confirm the browser's actual viewport dimensions and inspect the final captured image. Cropping a screenshot, changing an element's width, or checking horizontal overflow alone is not an equivalent viewport test. If the tool cannot set or verify the viewport, mark that coverage unverified. Reconcile the screenshot with the reported result: missing content, unusable wrapping, or invisible actions cannot be called a visual pass merely because a DOM check passed.
-
-For each finding record: reproduction → observed behavior → user impact → smallest useful correction → recheck. Label inference separately from observation. Prefer removing, moving, consolidating, or improving defaults before adding explanations. Do not repeat a passed review unless changes or remaining concerns justify it.
-
-If browser access is unavailable, review code/layout evidence and mark runtime UX unverified; continue independent work. Do not fabricate screenshots, clicks, or user validation. The developer's or agent's review is not a user study.
+Use `verification` through the same index for the relevant owner observations. The consuming project's selected verification source owns evidence sufficiency and completion reporting. Keep code correctness, observed design quality and user acceptance distinct. Source access establishes what was read, not that the resulting design judgment was adequate.

@@ -16,6 +16,8 @@ CASES = [
     ('feedback', 'feedback-actions'),
     ('화면 설계', 'workflow'),
     ('사용자 흐름', 'workflow'),
+    ('시각적 표현', 'visual-expression'),
+    ('visual hierarchy', 'visual-expression'),
 ]
 
 

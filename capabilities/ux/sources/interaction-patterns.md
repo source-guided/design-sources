@@ -1,47 +1,25 @@
-# Choose the interaction surface
+# Judge the interaction surface and transition
 
-The decision depends on the task. A layout shift does not automatically justify a modal, and avoiding modals does not justify forcing every workflow into inline fields.
+Apply the shared decision process in `workflow` through the [UX reference index](../../../references/index.json). This source owns the relationship between a changing surface and the user's continuing task. Visual hierarchy, proportion and identity across states are owned by `visual-expression`; consult that owner when evaluating the appearance of a proposed interaction.
 
-| Pattern | Useful when | Review tradeoff |
-| --- | --- | --- |
-| Inline editing | A small local change should preserve the surrounding reading/review context | Match read/edit geometry where practical; make save/cancel and draft state clear |
-| Dedicated editing area/page | Editing is the primary task, content is long, or multiple dependent steps need room | Preserve prior input and provide a clear return path and unsaved-work behavior |
-| Modal dialog | A short focused interruption is justified by a decision or required input | Background is blocked; manage focus, cancellation, and recovery; avoid nested/repeated dialogs |
+## Understand the work the surface supports
 
-An adjacent panel is another option when the task needs both context and editing space, but narrow screens and keyboard navigation must be designed explicitly. No pattern is automatically better because it looks tidy in one screenshot.
+Consider task complexity, frequency, familiarity, dependencies, available space and the need to retain or compare surrounding information. For substantial input work, understand what the person knows at entry, what they must prepare, which decisions depend on earlier answers, when validation is useful, and which action commits the result. Use the adopted product contract for what survives navigation, cancellation and failure.
 
-## Decide the journey before the surface
+The model chooses the surface and behavior from that context. No surface is prescribed by a field count or by the desire to conceal a layout problem. Consider how plausible alternatives would change the user's effort and the context they retain.
 
-For substantial input work, establish what the user already knows or possesses, what they must prepare, which decisions depend on earlier answers, when validation becomes useful, and which action actually commits a result. Compare a grouped form, sequential flow, and independently revisitable tasks only where each is plausible. Choose from familiarity, repetition, dependencies, error recovery, and the need to compare information together. Do not choose by field count, a familiar brand, or the backend's entity structure alone.
+## Follow the action through the transition
 
-A first-time user should be able to identify the purpose, required preparation, starting action, and completion consequence from the product itself. Test without prefilled demo success, code knowledge, or coaching. A returning user may need a direct route to a local change instead of repeating onboarding. Preserve input when going back, revising an earlier choice, or returning after a recoverable failure; invalidate dependent results explicitly when appropriate.
+Identify what the person is reading or acting on and the next meaningful action. Follow relevant states and consider what appears, disappears, moves, changes meaning or becomes unavailable, including effects outside the changing region. Reason from the person's reading position, attention and action target, not just the component's internal state.
 
-Resolve UX references `gov-questions` and `visa-wizard` for applicable evidence. Their recommendations differ, including how progress navigation is presented; neither is a universal layout specification. Use the task's circumstances to explain what transfers and what does not. Keep concrete page counts, step names, and input formats in the consuming project.
+For a consequential change, consider the effort to locate the next action, relocate content, recover context, correct input or repeat work. A small repeated task can make an interruption expensive; a more involved task can justify a larger change of surface. Decide whether the benefit warrants the cost. Neither zero movement nor a familiar interaction pattern decides that balance.
 
-For expandable lists/forms, control menus, or competing result/detail views, use UX reference `task-navigation`. Intentional disclosure is not automatically a defect; choose a different surface when its expansion disrupts the primary task. Include open/close and return-state geometry in the transition checks below.
+Evaluate coupled changes along the actual task, including the transition into recovery and back to the next action where relevant. Introducing or removing information can alter the surrounding reading order, available space and action locations even when the control itself is unchanged. A useful piece of information does not automatically justify the disruption created by its placement. Consider the person's position and what they must operate next while choosing the treatment, rather than accepting that cost after implementation because the result is visible.
 
-## Preserve useful spatial continuity
+When observation is needed to settle that judgment, choose comparable states and meaningful surroundings. Separate changes caused by content, document layout, scrolling and focus so the observation answers the question. Use representative content or a counterexample that could challenge the rationale; do not impose a universal geometry or state matrix. Return to the shared workflow to conclude whether to retain or revise the treatment rather than treating measurement as the conclusion.
 
-For action placement and feedback lifetime, continue through the UX reference ID `feedback-actions`. Choose these as part of the mode transition before comparing rectangles.
+## Follow the owning references
 
-For mode changes such as read → edit → cancel/error/save:
-- Identify elements expected to remain stable: title, surrounding content, decision controls, scroll position, and the return-focus target.
-- Compare actual rectangles and screenshots before and after the action at relevant real viewport sizes. Use a tolerance appropriate to the component; do not impose one pixel threshold on all products.
-- Compare the edited component itself, not only an unchanged sibling. Map each read value to its edit field, its label, and the corresponding action slot. Equal outer boxes do not prove equal glyph placement: compare text origins, font, line height, letter spacing, border and padding. Preserve the planned action region rather than replacing a top action with a newly appended footer by accident.
-- Account for controls/help/error messages and scrollbar appearance. Reserve a justified local slot or match read/edit dimensions, without creating excessive blank space.
-- Keep long and translated content accessible. A fixed frame must support scrolling or another explicit expansion path; do not hide overflow merely to make a test pass. Check text enlargement and keyboard behavior.
-- Distinguish intentional expansion, navigation, and newly saved content from incidental movement that makes users lose their place. Focus should move to the relevant control and return meaningfully; do not suppress necessary focus visibility to preserve scroll numerically.
-- Verify that the focused input is actually visible in the viewport during keyboard entry, error recovery, and return from another surface. Do not apply `preventScroll` indiscriminately. If the target is outside the viewport, a minimal intentional scroll is appropriate. Compare document coordinates separately from viewport coordinates so intentional scrolling is not confused with layout movement.
+Use `feedback-actions` through the same index for the meaning, scope and lifetime of action results, and `task-navigation` for finding an item, selection and control behavior. The consuming project's selected verification source owns evidence sufficiency and completion reporting.
 
-Include transitions caused by data, not just explicit editing modes. Hold the task and viewport constant while selecting records or scopes that make contextual help, warnings, status, or descriptions appear, wrap, and disappear. Compare both directions and the region containing the changing content. An unchanged page width or a single final screenshot cannot establish continuity. Derive the expected stable anchors from the task; do not reserve arbitrary empty space or suppress necessary information merely to pass a geometry check.
-
-Do not use CLS alone as the acceptance criterion for an interaction. Shifts shortly after discrete input can be excluded from that metric even when an edit button pushes another action away. Test the user's actual transition in addition to load metrics.
-
-## Source basis and limits
-
-Reviewed 2026-11-03. These references inform pattern selection; the geometry checklist above is this source's practical review method, not a claim that the sources mandate one layout.
-
-- [Atlassian inline editable text field — reference](../../../references/index.json): supports switching between reading and editing on one page, matching custom read/edit sizing, and using a dedicated text area when editing is the screen's main purpose.
-- [Carbon modal guidelines — reference](../../../references/index.json): modals interrupt the main workflow; use them sparingly, and consider keeping repeated tasks on the main page.
-- [NN/g modal and nonmodal dialogs — reference](../../../references/index.json): describes interruption/context costs and circumstances that justify dialogs; complex multi-step work may deserve a full page.
-- [web.dev CLS — reference](../../../references/index.json): explains expected versus unexpected shifts and the recent-input exclusion window. A good CLS score is not proof that an interaction has good spatial continuity.
+Relevant external references include `atlassian-inline`, `carbon-modal`, `fluent-drawer`, `nng-modal`, `visa-wizard` and `web-cls`. Select them for a material question and read their scope before relying on them. A pattern name or metric does not decide whether an interaction is appropriate.

@@ -40,7 +40,7 @@
     {
       "id": "feedback-actions",
       "label": "피드백과 편집 행동의 연속성",
-      "description": "오류 복구·완료 알림·저장과 취소 영역을 선택하고 확인하는 안내",
+      "description": "이미 전달된 정보와 남은 정보 필요를 구분하고 피드백의 필요성·범위·수명을 판단하는 안내",
       "kind": "source",
       "access": "relative",
       "locator": "../capabilities/ux/sources/feedback-and-actions.md",
@@ -53,13 +53,15 @@
         "저장",
         "취소",
         "feedback",
-        "recovery"
+        "recovery",
+        "피드백",
+        "결과 확인"
       ]
     },
     {
       "id": "interactions",
       "label": "편집 화면과 상호작용 방식 선택",
-      "description": "인라인·대화상자·별도 페이지와 포커스·스크롤 전환을 비교하는 안내",
+      "description": "과업 맥락에서 편집 표면과 정보 변화가 다음 행동·복구 흐름에 주는 영향을 판단하는 안내",
       "kind": "source",
       "access": "relative",
       "locator": "../capabilities/ux/sources/interaction-patterns.md",
@@ -71,7 +73,8 @@
         "대화상자",
         "스크롤",
         "focus",
-        "editing"
+        "editing",
+        "전환"
       ]
     },
     {
@@ -107,9 +110,27 @@
       ]
     },
     {
+      "id": "visual-expression",
+      "label": "시각적 표현과 구성 판단",
+      "description": "필요한 식별성과 시각적 수단을 구분하고 신호의 조합·위계·비례·상태 간 정체성을 판단하는 관점",
+      "kind": "source",
+      "access": "relative",
+      "locator": "../capabilities/ux/sources/visual-expression.md",
+      "topics": [
+        "design",
+        "visual expression",
+        "visual hierarchy",
+        "시각적 표현",
+        "비례",
+        "조화",
+        "위계",
+        "상태 표현"
+      ]
+    },
+    {
       "id": "task-navigation",
       "label": "과업 탐색과 선택 상태",
-      "description": "현재 맥락·선택 항목·키보드 컨트롤·보조 화면을 검토하는 안내",
+      "description": "사용자 맥락·선택·조작 결과를 중심으로 탐색 방식을 판단하는 안내",
       "kind": "source",
       "access": "relative",
       "locator": "../capabilities/ux/sources/task-navigation.md",
@@ -121,13 +142,14 @@
         "keyboard",
         "탐색",
         "선택",
-        "navigation"
+        "navigation",
+        "과업"
       ]
     },
     {
       "id": "verification",
       "label": "화면 동작과 접근성 검증",
-      "description": "사용자 흐름·포커스·접근성·반응형 상태를 실제 화면에서 확인하는 안내",
+      "description": "사용자 결과와 구현 방식 검사를 구분하고 화면·포커스·복구를 관찰하는 안내",
       "kind": "source",
       "access": "relative",
       "locator": "../capabilities/ux/sources/verification.md",
@@ -139,13 +161,14 @@
         "accessibility",
         "반응형",
         "검증",
-        "responsive"
+        "responsive",
+        "판단 검증"
       ]
     },
     {
       "id": "workflow",
       "label": "사용자 과업 중심 화면 설계",
-      "description": "역할·사용자 흐름·상태 전환을 기준으로 화면을 구성하고 검토하는 안내",
+      "description": "변화의 필요성과 유지할 맥락을 먼저 판단하고 대안·실제 표현을 비교하는 공통 흐름",
       "kind": "source",
       "access": "relative",
       "locator": "../capabilities/ux/sources/workflow.md",
@@ -156,7 +179,9 @@
         "화면 설계",
         "사용자 흐름",
         "user journey",
-        "screen"
+        "screen",
+        "판단",
+        "참조 범위"
       ]
     },
     {
@@ -481,6 +506,19 @@
       "topics": [
         "contract",
         "reference"
+      ]
+    },
+    {
+      "id": "client-entry",
+      "label": "참조 진입과 적용 맥락",
+      "description": "연결된 원천의 진입 및 참조 읽기 절차",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://raw.githubusercontent.com/source-guided/project-builder/main/plugins/project-builder/sources/reference-entry.md",
+      "topics": [
+        "entry",
+        "reference",
+        "coverage"
       ]
     }
   ]
