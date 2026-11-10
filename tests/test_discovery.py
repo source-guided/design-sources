@@ -19,6 +19,10 @@ CASES = [
     ('시각적 표현', 'visual-criteria'),
     ('visual hierarchy', 'visual-criteria'),
     ('레이아웃 시프트', 'state-continuity'),
+    ('정보 구조', 'navigation-criteria'),
+    ('IA 정보 구조', 'navigation-criteria'),
+    ('다음 행동', 'navigation-criteria'),
+    ('판단 지원', 'navigation-criteria'),
 ]
 
 

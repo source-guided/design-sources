@@ -66,15 +66,23 @@
     },
     {
       "id": "navigation",
-      "label": "정보 탐색과 행동",
-      "description": "Information and action discovery",
+      "label": "정보 구조와 과업 경로",
+      "description": "사용자 목적별 정보 우선순위·상세 탐색·다음 행동과 판단 지원의 연결",
       "kind": "reference",
       "access": "relative",
       "locator": "navigation/index.json",
       "topics": [
+        "IA",
+        "information architecture",
+        "정보 구조",
         "navigation",
         "탐색",
-        "선택"
+        "선택",
+        "정보 우선순위",
+        "상세 탐색",
+        "다음 행동",
+        "판단 지원",
+        "task continuation"
       ]
     },
     {
