@@ -4,7 +4,7 @@
     {
       "id": "context-criteria",
       "label": "과업과 디자인 맥락 판단 항목",
-      "description": "Task and design context",
+      "description": "기능 요청의 실제 사용 목적·진입 맥락·판단 근거와 대안 의도를 해석하는 기준",
       "kind": "source",
       "access": "relative",
       "locator": "../../capabilities/ux/sources/context/criteria.md",
@@ -12,7 +12,12 @@
         "user task",
         "화면 설계",
         "사용자 흐름",
-        "design context"
+        "design context",
+        "사용 목적",
+        "진입 맥락",
+        "의도 추론",
+        "intent",
+        "contextual evidence"
       ]
     },
     {

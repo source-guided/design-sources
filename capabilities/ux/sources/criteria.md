@@ -4,7 +4,7 @@ These areas organize questions relevant to a product interface. The user's purpo
 
 | Area | Questions it owns |
 | --- | --- |
-| Context | User purpose, audience, priority and applicable design authority |
+| Context | Underlying purpose, contextual evidence, alternative intents and applicable design authority |
 | Navigation | Purpose-based information priority, optional detail, task continuation and decision support |
 | Visual | Hierarchy, typography, proportion, grouping, spacing and coherence |
 | Interaction | State transitions, action continuity, input behavior and preservation of work |
