@@ -1,0 +1,99 @@
+{
+  "format": 1,
+  "entries": [
+    {
+      "id": "navigation-criteria",
+      "label": "정보 탐색과 행동 판단 항목",
+      "description": "Information and action discovery",
+      "kind": "source",
+      "access": "relative",
+      "locator": "../../capabilities/ux/sources/navigation/criteria.md",
+      "topics": [
+        "navigation",
+        "탐색",
+        "선택"
+      ]
+    },
+    {
+      "id": "carbon-table",
+      "label": "Carbon 데이터 테이블",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://www.carbondesignsystem.com/building-blocks/core/components/data-table/guidelines",
+      "topics": [
+        "table",
+        "dense-data"
+      ]
+    },
+    {
+      "id": "linear-views",
+      "label": "Linear 보기 설정",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://linear.app/docs/display-options",
+      "topics": [
+        "list",
+        "board",
+        "preferences"
+      ]
+    },
+    {
+      "id": "notion-views",
+      "label": "Notion 데이터 보기",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://www.notion.com/help/views-filters-and-sorts",
+      "topics": [
+        "table",
+        "board",
+        "calendar",
+        "views"
+      ]
+    },
+    {
+      "id": "carbon-dropdown",
+      "label": "Carbon 선택 컨트롤",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://www.carbondesignsystem.com/building-blocks/core/components/dropdown/guidelines",
+      "topics": [
+        "select",
+        "dropdown"
+      ]
+    },
+    {
+      "id": "gov-accordion",
+      "label": "GOV.UK 접힘 콘텐츠 선택 기준",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://design-system.service.gov.uk/components/accordion/",
+      "topics": [
+        "disclosure",
+        "hierarchy"
+      ]
+    },
+    {
+      "id": "google-transit",
+      "label": "Google Maps 운행편 탐색 흐름",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://support.google.com/maps/answer/6142130?hl=en",
+      "topics": [
+        "wayfinding",
+        "journey",
+        "context"
+      ]
+    },
+    {
+      "id": "nng-disclosure",
+      "label": "NN/g 단계적 정보 공개",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://www.nngroup.com/articles/progressive-disclosure/",
+      "topics": [
+        "complexity",
+        "disclosure"
+      ]
+    }
+  ]
+}

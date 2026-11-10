@@ -8,16 +8,17 @@ from reference_io import load_index
 
 ROOT = Path(__file__).resolve().parents[1]
 CASES = [
-    ('접근성', 'verification'),
-    ('accessibility', 'verification'),
-    ('키보드', 'task-navigation'),
-    ('keyboard', 'task-navigation'),
-    ('오류 복구', 'feedback-actions'),
-    ('feedback', 'feedback-actions'),
-    ('화면 설계', 'workflow'),
-    ('사용자 흐름', 'workflow'),
-    ('시각적 표현', 'visual-expression'),
-    ('visual hierarchy', 'visual-expression'),
+    ('접근성', 'accessibility-criteria'),
+    ('accessibility', 'accessibility-criteria'),
+    ('키보드', 'accessibility-criteria'),
+    ('keyboard', 'accessibility-criteria'),
+    ('오류 복구', 'feedback-criteria'),
+    ('feedback', 'feedback-criteria'),
+    ('화면 설계', 'context-criteria'),
+    ('사용자 흐름', 'context-criteria'),
+    ('시각적 표현', 'visual-criteria'),
+    ('visual hierarchy', 'visual-criteria'),
+    ('레이아웃 시프트', 'state-continuity'),
 ]
 
 

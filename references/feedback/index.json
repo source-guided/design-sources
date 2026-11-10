@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "entries": [
+    {
+      "id": "feedback-criteria",
+      "label": "결과 이해와 피드백 판단 항목",
+      "description": "Understanding outcomes",
+      "kind": "source",
+      "access": "relative",
+      "locator": "../../capabilities/ux/sources/feedback/criteria.md",
+      "topics": [
+        "feedback",
+        "오류 복구",
+        "피드백"
+      ]
+    },
+    {
+      "id": "gov-questions",
+      "label": "GOV.UK 질문 화면",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://design-system.service.gov.uk/patterns/question-pages/",
+      "topics": [
+        "forms",
+        "questions"
+      ]
+    },
+    {
+      "id": "gov-errors",
+      "label": "GOV.UK 오류 요약",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://design-system.service.gov.uk/components/error-summary/",
+      "topics": [
+        "validation",
+        "errors"
+      ]
+    },
+    {
+      "id": "carbon-notification",
+      "label": "Carbon 알림 범위와 지속 시간",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://www.carbondesignsystem.com/building-blocks/core/components/notification/guidelines",
+      "topics": [
+        "feedback",
+        "notifications"
+      ]
+    },
+    {
+      "id": "gov-banner",
+      "label": "GOV.UK 배너 적용 범위",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://design-system.service.gov.uk/components/notification-banner/",
+      "topics": [
+        "feedback",
+        "banner"
+      ]
+    },
+    {
+      "id": "primer-feedback",
+      "label": "Primer 접근 가능한 피드백",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://primer.style/accessibility/patterns/accessible-notifications-and-messages/",
+      "topics": [
+        "feedback",
+        "accessibility"
+      ]
+    }
+  ]
+}

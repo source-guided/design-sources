@@ -1,0 +1,124 @@
+{
+  "format": 1,
+  "entries": [
+    {
+      "id": "interaction-criteria",
+      "label": "상호작용과 상태 전환 판단 항목",
+      "description": "State and operation",
+      "kind": "source",
+      "access": "relative",
+      "locator": "../../capabilities/ux/sources/interaction/criteria.md",
+      "topics": [
+        "interaction",
+        "편집",
+        "상태 전환",
+        "레이아웃 시프트",
+        "continuity"
+      ]
+    },
+    {
+      "id": "state-continuity",
+      "label": "일반 상태 전환의 위치 연속성",
+      "description": "편집과 일반적인 상태 변화에 적용하는 레이아웃 연속성 기준",
+      "kind": "source",
+      "access": "relative",
+      "locator": "../../capabilities/ux/sources/interaction/state-continuity.md",
+      "topics": [
+        "layout shift",
+        "레이아웃 시프트",
+        "편집",
+        "상태 전환",
+        "continuity"
+      ]
+    },
+    {
+      "id": "atlassian-inline",
+      "label": "Atlassian 인라인 편집",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://atlassian.design/components/inline-edit/inline-editable-textfield/usage",
+      "topics": [
+        "inline",
+        "editing"
+      ]
+    },
+    {
+      "id": "carbon-modal",
+      "label": "Carbon 모달",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://www.carbondesignsystem.com/building-blocks/core/components/modal/guidelines",
+      "topics": [
+        "modal",
+        "interruption"
+      ]
+    },
+    {
+      "id": "fluent-drawer",
+      "label": "Fluent 패널과 드로어",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://fluent2.microsoft.design/components/web/react/core/drawer/usage",
+      "topics": [
+        "drawer",
+        "context"
+      ]
+    },
+    {
+      "id": "nng-modal",
+      "label": "NN/g 모달 선택 기준",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://www.nngroup.com/articles/modal-nonmodal-dialog/",
+      "topics": [
+        "modal",
+        "context"
+      ]
+    },
+    {
+      "id": "visa-wizard",
+      "label": "Visa 다단계 작업의 적용과 한계",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://design.visa.com/patterns/wizard/usage/",
+      "topics": [
+        "journey",
+        "forms",
+        "complexity"
+      ]
+    },
+    {
+      "id": "carbon-forms",
+      "label": "Carbon 폼 행동 영역",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://www.carbondesignsystem.com/building-blocks/core/patterns/forms",
+      "topics": [
+        "forms",
+        "actions"
+      ]
+    },
+    {
+      "id": "sap-partial-edit",
+      "label": "SAP Fiori 부분 편집",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://www.sap.com/design-system/fiori-design-web/v1-96/foundations/best-practices/global-patterns/object-handling/manage-parts-of-an-object",
+      "topics": [
+        "editing",
+        "actions"
+      ]
+    },
+    {
+      "id": "web-cls",
+      "label": "web.dev 레이아웃 이동",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://web.dev/articles/cls",
+      "topics": [
+        "layout",
+        "metrics"
+      ]
+    }
+  ]
+}

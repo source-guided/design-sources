@@ -1,0 +1,30 @@
+{
+  "format": 1,
+  "entries": [
+    {
+      "id": "context-criteria",
+      "label": "과업과 디자인 맥락 판단 항목",
+      "description": "Task and design context",
+      "kind": "source",
+      "access": "relative",
+      "locator": "../../capabilities/ux/sources/context/criteria.md",
+      "topics": [
+        "user task",
+        "화면 설계",
+        "사용자 흐름",
+        "design context"
+      ]
+    },
+    {
+      "id": "mcp-context",
+      "label": "Figma 도구와 에이전트의 역할",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://developers.figma.com/docs/figma-mcp-server/mcp-vs-agent/",
+      "topics": [
+        "figma",
+        "context"
+      ]
+    }
+  ]
+}

@@ -26,7 +26,7 @@
     {
       "id": "ux",
       "label": "사용자 화면 설계·검토 스킬",
-      "description": "화면 설계와 사용자 흐름 검토의 진입 안내",
+      "description": "디자인 판단 영역과 하위 근거를 찾는 진입점",
       "kind": "source",
       "access": "relative",
       "locator": "../capabilities/ux/SKILL.md",
@@ -38,474 +38,101 @@
       ]
     },
     {
-      "id": "feedback-actions",
-      "label": "피드백과 편집 행동의 연속성",
-      "description": "접근 방식별 이미 전달된 정보와 남은 필요를 구분하고 설명·행동·안내의 관계를 판단하는 흐름",
+      "id": "criteria",
+      "label": "디자인 판단 영역",
+      "description": "과업·탐색·구성·상호작용·피드백·접근성의 질문 범위",
       "kind": "source",
       "access": "relative",
-      "locator": "../capabilities/ux/sources/feedback-and-actions.md",
+      "locator": "../capabilities/ux/sources/criteria.md",
       "topics": [
         "design",
-        "ux",
-        "feedback-and-actions",
-        "오류 복구",
-        "알림",
-        "저장",
-        "취소",
-        "feedback",
-        "recovery",
-        "피드백",
-        "결과 확인"
+        "화면 설계",
+        "판단 영역"
       ]
     },
     {
-      "id": "interactions",
-      "label": "편집 화면과 상호작용 방식 선택",
-      "description": "실제 읽기·행동 위치에서 상태 전환과 다음 행동을 관찰하고 배치가 만드는 복구 비용을 판단하는 안내",
-      "kind": "source",
+      "id": "context",
+      "label": "과업과 디자인 맥락",
+      "description": "Task and design context",
+      "kind": "reference",
       "access": "relative",
-      "locator": "../capabilities/ux/sources/interaction-patterns.md",
+      "locator": "context/index.json",
       "topics": [
-        "design",
-        "ux",
-        "interaction-patterns",
-        "편집",
-        "대화상자",
-        "스크롤",
-        "focus",
-        "editing",
-        "전환"
-      ]
-    },
-    {
-      "id": "patterns",
-      "label": "사용자 과업별 화면 예제",
-      "description": "찾기·미리보기·문서 검토·오류 복구의 적용 조건과 반례",
-      "kind": "source",
-      "access": "relative",
-      "locator": "../capabilities/ux/sources/patterns.md",
-      "topics": [
-        "design",
-        "ux",
-        "patterns",
-        "예제",
-        "사용자 과업"
-      ]
-    },
-    {
-      "id": "selection",
-      "label": "디자인 참고 자료와 방향 선택",
-      "description": "구체적 화면 비교와 원래 기술·접근성 기준의 적용 범위를 확인해 디자인 방향을 선택하는 안내",
-      "kind": "source",
-      "access": "relative",
-      "locator": "../capabilities/ux/sources/reference-selection.md",
-      "topics": [
-        "design",
-        "ux",
-        "reference-selection",
-        "참고 자료",
-        "디자인 방향",
-        "선호",
-        "reference selection"
-      ]
-    },
-    {
-      "id": "visual-expression",
-      "label": "시각적 표현과 구성 판단",
-      "description": "전체와 인접 관계, 각 신호의 추가 정보와 합성된 강조·공간을 실제 상태에서 판단하는 관점",
-      "kind": "source",
-      "access": "relative",
-      "locator": "../capabilities/ux/sources/visual-expression.md",
-      "topics": [
-        "design",
-        "visual expression",
-        "visual hierarchy",
-        "시각적 표현",
-        "비례",
-        "조화",
-        "위계",
-        "상태 표현"
-      ]
-    },
-    {
-      "id": "task-navigation",
-      "label": "과업 탐색과 선택 상태",
-      "description": "사용자 맥락·선택·조작 결과를 중심으로 탐색 방식을 판단하는 안내",
-      "kind": "source",
-      "access": "relative",
-      "locator": "../capabilities/ux/sources/task-navigation.md",
-      "topics": [
-        "design",
-        "ux",
-        "task-navigation",
-        "키보드",
-        "keyboard",
-        "탐색",
-        "선택",
-        "navigation",
-        "과업"
-      ]
-    },
-    {
-      "id": "verification",
-      "label": "화면 동작과 접근성 검증",
-      "description": "사용자 결과와 구현 방식 검사를 구분하고 화면·포커스·복구를 관찰하는 안내",
-      "kind": "source",
-      "access": "relative",
-      "locator": "../capabilities/ux/sources/verification.md",
-      "topics": [
-        "design",
-        "ux",
-        "verification",
-        "접근성",
-        "accessibility",
-        "반응형",
-        "검증",
-        "responsive",
-        "판단 검증"
-      ]
-    },
-    {
-      "id": "workflow",
-      "label": "사용자 과업 중심 화면 설계",
-      "description": "구체적 비교 근거를 정하고 실제 화면에서 예상하지 못한 문제까지 발견·처리하는 판단 흐름",
-      "kind": "source",
-      "access": "relative",
-      "locator": "../capabilities/ux/sources/workflow.md",
-      "topics": [
-        "design",
-        "ux",
-        "workflow",
+        "user task",
         "화면 설계",
         "사용자 흐름",
-        "user journey",
-        "screen",
-        "판단",
-        "참조 범위"
+        "design context"
       ]
     },
     {
-      "id": "ux-desktop",
-      "label": "문서 검토 예제 데스크톱 화면",
-      "description": "합성 문서 검토 예제의 넓은 화면 이미지",
-      "kind": "source",
+      "id": "navigation",
+      "label": "정보 탐색과 행동",
+      "description": "Information and action discovery",
+      "kind": "reference",
       "access": "relative",
-      "locator": "../capabilities/ux/assets/document-review/desktop.png",
+      "locator": "navigation/index.json",
       "topics": [
-        "ux-desktop",
-        "문서 검토",
-        "데스크톱",
-        "example"
+        "navigation",
+        "탐색",
+        "선택"
       ]
     },
     {
-      "id": "ux-index",
-      "label": "문서 검토 실행 예제",
-      "description": "버전별 승인과 편집 흐름을 확인하는 페이지 내부 상태 예제",
-      "kind": "source",
+      "id": "visual",
+      "label": "시각적 구성",
+      "description": "Visual relationships",
+      "kind": "reference",
       "access": "relative",
-      "locator": "../capabilities/ux/assets/document-review/index.html",
+      "locator": "visual/index.json",
       "topics": [
-        "ux-index",
-        "문서 검토",
-        "승인",
+        "시각적 표현",
+        "visual hierarchy",
+        "typography",
+        "spacing",
+        "위계",
+        "간격"
+      ]
+    },
+    {
+      "id": "interaction",
+      "label": "상호작용과 상태 전환",
+      "description": "State and operation",
+      "kind": "reference",
+      "access": "relative",
+      "locator": "interaction/index.json",
+      "topics": [
+        "interaction",
         "편집",
-        "example"
+        "상태 전환",
+        "레이아웃 시프트",
+        "continuity"
       ]
     },
     {
-      "id": "ux-narrow",
-      "label": "문서 검토 예제 좁은 화면",
-      "description": "합성 문서 검토 예제의 좁은 화면 이미지",
-      "kind": "source",
+      "id": "feedback",
+      "label": "결과 이해와 피드백",
+      "description": "Understanding outcomes",
+      "kind": "reference",
       "access": "relative",
-      "locator": "../capabilities/ux/assets/document-review/narrow.png",
+      "locator": "feedback/index.json",
       "topics": [
-        "ux-narrow",
-        "문서 검토",
-        "반응형",
-        "example"
+        "feedback",
+        "오류 복구",
+        "피드백"
       ]
     },
     {
-      "id": "mcp-context",
-      "label": "Figma 도구와 에이전트의 역할",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://developers.figma.com/docs/figma-mcp-server/mcp-vs-agent/",
+      "id": "accessibility",
+      "label": "접근성과 조작",
+      "description": "Access and operation",
+      "kind": "reference",
+      "access": "relative",
+      "locator": "accessibility/index.json",
       "topics": [
-        "figma",
-        "context"
-      ]
-    },
-    {
-      "id": "carbon-table",
-      "label": "Carbon 데이터 테이블",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://www.carbondesignsystem.com/building-blocks/core/components/data-table/guidelines",
-      "topics": [
-        "table",
-        "dense-data"
-      ]
-    },
-    {
-      "id": "linear-views",
-      "label": "Linear 보기 설정",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://linear.app/docs/display-options",
-      "topics": [
-        "list",
-        "board",
-        "preferences"
-      ]
-    },
-    {
-      "id": "notion-views",
-      "label": "Notion 데이터 보기",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://www.notion.com/help/views-filters-and-sorts",
-      "topics": [
-        "table",
-        "board",
-        "calendar",
-        "views"
-      ]
-    },
-    {
-      "id": "atlassian-inline",
-      "label": "Atlassian 인라인 편집",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://atlassian.design/components/inline-edit/inline-editable-textfield/usage",
-      "topics": [
-        "inline",
-        "editing"
-      ]
-    },
-    {
-      "id": "carbon-modal",
-      "label": "Carbon 모달",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://www.carbondesignsystem.com/building-blocks/core/components/modal/guidelines",
-      "topics": [
-        "modal",
-        "interruption"
-      ]
-    },
-    {
-      "id": "fluent-drawer",
-      "label": "Fluent 패널과 드로어",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://fluent2.microsoft.design/components/web/react/core/drawer/usage",
-      "topics": [
-        "drawer",
-        "context"
-      ]
-    },
-    {
-      "id": "gov-questions",
-      "label": "GOV.UK 질문 화면",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://design-system.service.gov.uk/patterns/question-pages/",
-      "topics": [
-        "forms",
-        "questions"
-      ]
-    },
-    {
-      "id": "gov-errors",
-      "label": "GOV.UK 오류 요약",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://design-system.service.gov.uk/components/error-summary/",
-      "topics": [
-        "validation",
-        "errors"
-      ]
-    },
-    {
-      "id": "nng-modal",
-      "label": "NN/g 모달 선택 기준",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://www.nngroup.com/articles/modal-nonmodal-dialog/",
-      "topics": [
-        "modal",
-        "context"
-      ]
-    },
-    {
-      "id": "nng-disclosure",
-      "label": "NN/g 단계적 정보 공개",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://www.nngroup.com/articles/progressive-disclosure/",
-      "topics": [
-        "complexity",
-        "disclosure"
-      ]
-    },
-    {
-      "id": "wai-dialog",
-      "label": "WAI-ARIA 대화상자 패턴",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
-      "topics": [
+        "accessibility",
+        "접근성",
         "keyboard",
-        "accessibility"
-      ]
-    },
-    {
-      "id": "web-cls",
-      "label": "web.dev 레이아웃 이동",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://web.dev/articles/cls",
-      "topics": [
-        "layout",
-        "metrics"
-      ]
-    },
-    {
-      "id": "carbon-notification",
-      "label": "Carbon 알림 범위와 지속 시간",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://www.carbondesignsystem.com/building-blocks/core/components/notification/guidelines",
-      "topics": [
-        "feedback",
-        "notifications"
-      ]
-    },
-    {
-      "id": "gov-banner",
-      "label": "GOV.UK 배너 적용 범위",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://design-system.service.gov.uk/components/notification-banner/",
-      "topics": [
-        "feedback",
-        "banner"
-      ]
-    },
-    {
-      "id": "primer-feedback",
-      "label": "Primer 접근 가능한 피드백",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://primer.style/accessibility/patterns/accessible-notifications-and-messages/",
-      "topics": [
-        "feedback",
-        "accessibility"
-      ]
-    },
-    {
-      "id": "carbon-forms",
-      "label": "Carbon 폼 행동 영역",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://www.carbondesignsystem.com/building-blocks/core/patterns/forms",
-      "topics": [
-        "forms",
-        "actions"
-      ]
-    },
-    {
-      "id": "sap-partial-edit",
-      "label": "SAP Fiori 부분 편집",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://www.sap.com/design-system/fiori-design-web/v1-96/foundations/best-practices/global-patterns/object-handling/manage-parts-of-an-object",
-      "topics": [
-        "editing",
-        "actions"
-      ]
-    },
-    {
-      "id": "carbon-dropdown",
-      "label": "Carbon 선택 컨트롤",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://www.carbondesignsystem.com/building-blocks/core/components/dropdown/guidelines",
-      "topics": [
-        "select",
-        "dropdown"
-      ]
-    },
-    {
-      "id": "wai-combobox",
-      "label": "WAI-ARIA 콤보박스 패턴",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://www.w3.org/WAI/ARIA/apg/patterns/combobox/",
-      "topics": [
-        "selection",
-        "keyboard"
-      ]
-    },
-    {
-      "id": "gov-accordion",
-      "label": "GOV.UK 접힘 콘텐츠 선택 기준",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://design-system.service.gov.uk/components/accordion/",
-      "topics": [
-        "disclosure",
-        "hierarchy"
-      ]
-    },
-    {
-      "id": "google-transit",
-      "label": "Google Maps 운행편 탐색 흐름",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://support.google.com/maps/answer/6142130?hl=en",
-      "topics": [
-        "wayfinding",
-        "journey",
-        "context"
-      ]
-    },
-    {
-      "id": "wai-selectonly",
-      "label": "WAI 선택형 콤보박스 동작 예제",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://www.w3.org/WAI/ARIA/apg/patterns/combobox/examples/combobox-select-only/",
-      "topics": [
-        "keyboard",
-        "select-only"
-      ]
-    },
-    {
-      "id": "visa-wizard",
-      "label": "Visa 다단계 작업의 적용과 한계",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://design.visa.com/patterns/wizard/usage/",
-      "topics": [
-        "journey",
-        "forms",
-        "complexity"
-      ]
-    },
-    {
-      "id": "client-contract",
-      "label": "참조 체계 참여 계약",
-      "description": "원천 소유권과 내부 스킬 노출 경계",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://raw.githubusercontent.com/source-guided/project-builder/main/plugins/project-builder/sources/source-contract.md",
-      "topics": [
-        "contract",
-        "reference"
+        "키보드"
       ]
     },
     {
@@ -522,45 +149,15 @@
       ]
     },
     {
-      "id": "css-focus-visible",
-      "label": "CSS 포커스 표시 조건",
+      "id": "client-contract",
+      "label": "참조 체계 참여 계약",
+      "description": "원천 소유권과 내부 스킬 노출 경계",
       "kind": "source",
       "access": "web",
-      "locator": "https://www.w3.org/TR/selectors-4/#the-focus-visible-pseudo",
+      "locator": "https://raw.githubusercontent.com/source-guided/project-builder/main/plugins/project-builder/sources/source-contract.md",
       "topics": [
-        "focus",
-        "input modality",
-        "focus-visible",
-        "포커스",
-        "표시 조건"
-      ]
-    },
-    {
-      "id": "wai-focus-indication",
-      "label": "WAI 포커스 표시 기법의 적용 범위",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://www.w3.org/WAI/WCAG22/Techniques/css/C45",
-      "topics": [
-        "accessibility",
-        "focus",
-        "keyboard",
-        "포커스",
-        "접근성"
-      ]
-    },
-    {
-      "id": "wai-status-messages",
-      "label": "WAI 상태 메시지의 범위",
-      "kind": "source",
-      "access": "web",
-      "locator": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html",
-      "topics": [
-        "feedback",
-        "status",
-        "announcement",
-        "알림",
-        "보조기술"
+        "contract",
+        "reference"
       ]
     }
   ]

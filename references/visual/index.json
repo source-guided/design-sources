@@ -1,0 +1,21 @@
+{
+  "format": 1,
+  "entries": [
+    {
+      "id": "visual-criteria",
+      "label": "시각적 구성 판단 항목",
+      "description": "Visual relationships",
+      "kind": "source",
+      "access": "relative",
+      "locator": "../../capabilities/ux/sources/visual/criteria.md",
+      "topics": [
+        "시각적 표현",
+        "visual hierarchy",
+        "typography",
+        "spacing",
+        "위계",
+        "간격"
+      ]
+    }
+  ]
+}

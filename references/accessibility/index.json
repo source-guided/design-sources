@@ -1,0 +1,94 @@
+{
+  "format": 1,
+  "entries": [
+    {
+      "id": "accessibility-criteria",
+      "label": "접근성과 조작 판단 항목",
+      "description": "Access and operation",
+      "kind": "source",
+      "access": "relative",
+      "locator": "../../capabilities/ux/sources/accessibility/criteria.md",
+      "topics": [
+        "accessibility",
+        "접근성",
+        "keyboard",
+        "키보드"
+      ]
+    },
+    {
+      "id": "wai-dialog",
+      "label": "WAI-ARIA 대화상자 패턴",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
+      "topics": [
+        "keyboard",
+        "accessibility"
+      ]
+    },
+    {
+      "id": "wai-combobox",
+      "label": "WAI-ARIA 콤보박스 패턴",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://www.w3.org/WAI/ARIA/apg/patterns/combobox/",
+      "topics": [
+        "selection",
+        "keyboard"
+      ]
+    },
+    {
+      "id": "wai-selectonly",
+      "label": "WAI 선택형 콤보박스 동작 예제",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://www.w3.org/WAI/ARIA/apg/patterns/combobox/examples/combobox-select-only/",
+      "topics": [
+        "keyboard",
+        "select-only"
+      ]
+    },
+    {
+      "id": "css-focus-visible",
+      "label": "CSS 포커스 표시 조건",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://www.w3.org/TR/selectors-4/#the-focus-visible-pseudo",
+      "topics": [
+        "focus",
+        "input modality",
+        "focus-visible",
+        "포커스",
+        "표시 조건"
+      ]
+    },
+    {
+      "id": "wai-focus-indication",
+      "label": "WAI 포커스 표시 기법의 적용 범위",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://www.w3.org/WAI/WCAG22/Techniques/css/C45",
+      "topics": [
+        "accessibility",
+        "focus",
+        "keyboard",
+        "포커스",
+        "접근성"
+      ]
+    },
+    {
+      "id": "wai-status-messages",
+      "label": "WAI 상태 메시지의 범위",
+      "kind": "source",
+      "access": "web",
+      "locator": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html",
+      "topics": [
+        "feedback",
+        "status",
+        "announcement",
+        "알림",
+        "보조기술"
+      ]
+    }
+  ]
+}
